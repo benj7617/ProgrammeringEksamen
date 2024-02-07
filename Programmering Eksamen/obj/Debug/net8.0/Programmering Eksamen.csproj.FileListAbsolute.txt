@@ -1,0 +1,31 @@
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\appsettings.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\Programmering Eksamen.staticwebassets.runtime.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\Programmering Eksamen.exe
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\Programmering Eksamen.deps.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\Programmering Eksamen.runtimeconfig.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\Programmering Eksamen.dll
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\bin\Debug\net8.0\Programmering Eksamen.pdb
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.AssemblyInfoInputs.cache
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.AssemblyInfo.cs
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.csproj.CoreCompileInputs.cache
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.RazorAssemblyInfo.cache
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.RazorAssemblyInfo.cs
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.sourcelink.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets\msbuild.Programmering Eksamen.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets\msbuild.build.Programmering Eksamen.props
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Programmering Eksamen.props
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Programmering Eksamen.props
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\scopedcss\bundle\Programmering Eksamen.styles.css
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\scopedcss\projectbundle\Programmering Eksamen.bundle.scp.css
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.dll
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\refint\Programmering Eksamen.dll
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.pdb
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\Programmering Eksamen.genruntimeconfig.cache
+C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\obj\Debug\net8.0\ref\Programmering Eksamen.dll
