@@ -1,1 +1,13 @@
-﻿
+﻿@model List<Product>
+
+<h1>Alkohol vi har på lager lige for tiden. Der er @Model.Count på lager</h1>
+@*Når modellen skal tilgås skal model skrives med stort, af en eller anden grund*@
+
+<ul>
+	@foreach(Product item in Model)
+	{
+		<li>
+			<p>@item.Name @item.Cost</p>
+		</li>
+	}
+</ul>
