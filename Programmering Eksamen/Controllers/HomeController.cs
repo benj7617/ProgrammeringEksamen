@@ -43,7 +43,9 @@ namespace Programmering_Eksamen.Controllers
         [HttpPost] //tillader at der bliver sendt data fra frontend til databasen
         public IActionResult AddProduct(Product product) //har 2 af samme navn, polymorfi betyder vi kan have 2 med samme navn, som bruges alt efter input argumenter
         {
-            return View();
+            _context.Products.Add(product); //tilføjer til databasen
+            _context.SaveChanges(); //gemme det nye objekt til databsen
+            return View(); //kunne ændres til en redirect så det bliver tydeligere for brugeren at der er sket noget
         }
 
 
