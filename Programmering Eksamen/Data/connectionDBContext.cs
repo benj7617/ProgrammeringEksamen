@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore; //integrer EntityFramework i filen
 
 namespace Programmering_Eksamen.Data
 {
-    public class connectionDBContext :DbContext
+    public class connectionDBContext : DbContext
     {
         private readonly IConfiguration _config;
         public connectionDBContext(IConfiguration config)

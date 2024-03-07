@@ -1,8 +1,8 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Programmering_Eksamen.Data;
-using Programmering_Eksamen.Data.Entities;
 using Programmering_Eksamen.Models;
+using System.Diagnostics;
+using Programmering_Eksamen.Data.Entities;
 
 namespace Programmering_Eksamen.Controllers
 {
@@ -34,6 +34,16 @@ namespace Programmering_Eksamen.Controllers
         {
             List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
+        }
+        [HttpGet] //standard, som alle bruger per default. skal skrives her grundet vi har 2 forkellige
+        public IActionResult AddProduct()
+        {
+            return View();
+        }
+        [HttpPost] //tillader at der bliver sendt data fra frontend til databasen
+        public IActionResult AddProduct(Product product) //har 2 af samme navn, polymorfi betyder vi kan have 2 med samme navn, som bruges alt efter input argumenter
+        {
+            return View();
         }
 
 

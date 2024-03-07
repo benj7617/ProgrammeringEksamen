@@ -1,7 +1,10 @@
+using Programmering_Eksamen.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<connectionDBContext>();
 
 var app = builder.Build();
 
