@@ -1,7 +1,7 @@
 
 /Programmering Eksamen/.vs/Programmering Eksamen/FileContentIndex
 *.vsidx
-*.vsidx
-*.vsidx
-*.vsidx
+*.cache
+*.props
+*.target
 /Programmering Eksamen/.vs/Programmering Eksamen/DesignTimeBuild
