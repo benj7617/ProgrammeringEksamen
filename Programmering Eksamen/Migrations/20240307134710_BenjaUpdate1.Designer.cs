@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Programmering_Eksamen.Data;
 
@@ -11,9 +12,11 @@ using Programmering_Eksamen.Data;
 namespace Programmering_Eksamen.Migrations
 {
     [DbContext(typeof(connectionDBContext))]
-    partial class connectionDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240307134710_BenjaUpdate1")]
+    partial class BenjaUpdate1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

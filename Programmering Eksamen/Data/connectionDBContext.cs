@@ -1,6 +1,7 @@
 ﻿using Programmering_Eksamen.Data.Entities;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore; //integrer EntityFramework i filen
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client; //integrer EntityFramework i filen
 
 namespace Programmering_Eksamen.Data
 {
@@ -13,6 +14,7 @@ namespace Programmering_Eksamen.Data
         }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; } //ik sikker på om den her bør være her, prøver bare noget
 
         
 
