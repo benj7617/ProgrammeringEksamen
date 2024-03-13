@@ -35,6 +35,14 @@ namespace Programmering_Eksamen.Controllers
             List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+
+
+
         [HttpGet] //standard, som alle bruger per default. skal skrives her grundet vi har 2 forkellige
         public IActionResult AddProduct()
         {
@@ -49,12 +57,11 @@ namespace Programmering_Eksamen.Controllers
         }
 
 
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
