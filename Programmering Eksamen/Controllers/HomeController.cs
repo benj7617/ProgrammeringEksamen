@@ -3,6 +3,7 @@ using Programmering_Eksamen.Data;
 using Programmering_Eksamen.Models;
 using System.Diagnostics;
 using Programmering_Eksamen.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Programmering_Eksamen.Controllers
 {
@@ -35,13 +36,79 @@ namespace Programmering_Eksamen.Controllers
             List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
-        public IActionResult Login()
+
+        /////////////////////////////////////////////////////////////////SIGNUP///////////////////////////////////////////////////////////////////////////////
+
+        [HttpGet] // Kode til bare at gå ind på siden
+        public IActionResult Signup()
         {
             return View();
         }
 
+        [HttpPost] // Kode til at submitte indtastet info
+        public IActionResult Signup(string username, string password, string email)
+        {
+            // checker database for om brugernavn er i brug
+            if (_context.Users.Any(u => u.Name == username))
+            {
+                string message = "Username  allerede i brug";
+                ViewData["Message"] = message;
+                return View(); // viser error message
+            }
+            if (_context.Users.Any(u => u.email == email))
+            {
+                string emailibrug = "Email allerede i brug";
+                ViewData["Message"] = emailibrug;
+                return View(); // viser error message
+            }
 
+            // Skaber ny User med indtastede info
+            var user = new User { Name = username, password = password, email = email };
 
+            // Tilføjer bruger til databasen og gemmer det
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            //skaber en besked så bruger kan se deres konto blev lavet succesfuldt
+            string kontosucces = "Din konto er blevet lavet. Log in nu";
+            ViewData["Message"] = kontosucces;
+
+            return RedirectToAction("Login"); // Sender bruger videre til login.cshtml
+        }
+
+        /////////////////////////////////////////////////////////////LOGIN///////////////////////////////////////////////////////////////////////////////
+
+        [HttpGet] // metoden til bare at gå ind på hjemmesiden
+        public IActionResult Login()
+        {
+            return View(); // Return the login view
+        }
+
+        [HttpPost]
+        public IActionResult Login(string username, string password)
+        {
+            // finder ud af om indtastet username matcher nogen i database
+            var user = _context.Users.FirstOrDefault(u => u.Name == username);
+
+            if (user != null && user.password == password) //hvis brugernavn findes og password er korrekt
+            {
+                return RedirectToAction("Index", "Home"); // Sender brugeren til indexsiden efter succesfuld login
+            }
+            else if(user != null) //hvis bruger findes men password ikke er korrekt
+            {
+                //gemmer error message til brug på login.cshtml
+                string message = "Password er forkert";
+                ViewData["Message"] = message;
+                //sender bruger til opdateret login.cshtml
+                return View();
+            }
+            else 
+            {
+                string message = "Brugeren ikke fundet";
+                ViewData["Message"] = message;
+                return View(); 
+            }
+        }
 
         [HttpGet] //standard, som alle bruger per default. skal skrives her grundet vi har 2 forkellige
         public IActionResult AddProduct()

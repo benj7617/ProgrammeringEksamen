@@ -1,0 +1,15 @@
+﻿<div class="login-container">
+    <h2>Sign up</h2>
+    <form action="@Url.Action("SignUp", "Home")" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username-signup" name="username" required>
+        <label for="email">email:</label>
+        <input type="text" id="email-signup" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password-signup" name="password" required>
+        <input type="submit" value="Sign Up">
+    </form>
+    <br />
+</div>
+
+<p>@ViewData["Message"]</p>

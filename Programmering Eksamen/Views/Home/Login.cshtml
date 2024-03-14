@@ -1,16 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
+@model string
 
-<body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="submit" value="Login">
-        </form>
-    </div>
-</body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="@Url.Action("Login", "Home")" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Login">
+    </form>
+    <br />
+</div>
+
+<p>@ViewData["Message"]</p>
+
+
