@@ -52,13 +52,13 @@ namespace Programmering_Eksamen.Controllers
             if (_context.Users.Any(u => u.Name == username))
             {
                 string message = "Username  allerede i brug";
-                ViewData["Message"] = message;
+                ViewData["errormsg"] = message;
                 return View(); // viser error message
             }
             if (_context.Users.Any(u => u.email == email))
             {
                 string emailibrug = "Email allerede i brug";
-                ViewData["Message"] = emailibrug;
+                ViewData["errormsg"] = emailibrug;
                 return View(); // viser error message
             }
 
@@ -71,7 +71,7 @@ namespace Programmering_Eksamen.Controllers
 
             //skaber en besked så bruger kan se deres konto blev lavet succesfuldt
             string kontosucces = "Din konto er blevet lavet. Log in nu";
-            ViewData["Message"] = kontosucces;
+            ViewData["errormsg"] = kontosucces;
 
             return RedirectToAction("Login"); // Sender bruger videre til login.cshtml
         }
@@ -92,20 +92,22 @@ namespace Programmering_Eksamen.Controllers
 
             if (user != null && user.password == password) //hvis brugernavn findes og password er korrekt
             {
+                ViewData["username"] = user; //sender username og password videre
+                ViewData["password"] = password; //sender username og password videre
                 return RedirectToAction("Index", "Home"); // Sender brugeren til indexsiden efter succesfuld login
             }
             else if(user != null) //hvis bruger findes men password ikke er korrekt
             {
                 //gemmer error message til brug på login.cshtml
                 string message = "Password er forkert";
-                ViewData["Message"] = message;
+                ViewData["errormsg"] = message;
                 //sender bruger til opdateret login.cshtml
                 return View();
             }
             else 
             {
                 string message = "Brugeren ikke fundet";
-                ViewData["Message"] = message;
+                ViewData["errormsg"] = message;
                 return View(); 
             }
         }

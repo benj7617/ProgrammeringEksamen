@@ -1,6 +1,8 @@
+<!--Benjamin-->
 @model string
 
 <div class="login-container">
+    <h1>Ved at logge in accpeterer du at der gemmes en cookie på din computer</h1>
     <h2>Login</h2>
     <form action="@Url.Action("Login", "Home")" method="post">
         <label for="username">Username:</label>
@@ -12,6 +14,6 @@
     <br />
 </div>
 
-<p>@ViewData["Message"]</p>
+<p>@ViewData["errormsg"]</p>
 
-
+<!--Måske lave en option til save login? ret nemt at lave med js hvis bare c# blir funktionel-->
