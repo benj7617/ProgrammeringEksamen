@@ -1,22 +1,21 @@
 ﻿<!--Benjamin-->
 @{
     ViewData["Title"] = "Home Page";
-    bool nameRecieved = false;
 }
 
 <script defer>
-    console.log("jeg er et script og jeg kører")
+    console.log("jeg er et script og jeg kører");
+    console.log("Username er: " + '@TempData["username"]');
     // man er nødt til at checke om det er null i c#, da det giver syntax error hvis man gør det i JS 
-    console.log(@ViewData["username"])
-    @if (ViewData["username"] != null)
+    @if (TempData["username"] != null)
     {
         @: console.log("name recieved, saving cookies");
-        @: document.cookie = "username=@ViewData["username"]; path=/";
-        @: document.cookie = "password=@ViewData["password"]; path=/";
+        @: document.cookie = "username=@TempData["username"]; path=/";
+        @: document.cookie = "password=@TempData["password"]; path=/";
     }
     else
     {
-        @: console.log("error:normal - username er lig null. Er du logget ind?");
+        @: console.log("error:normal - username er null. Er du logget ind?");
     }
 </script>
 

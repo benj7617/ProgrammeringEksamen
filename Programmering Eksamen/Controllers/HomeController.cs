@@ -37,7 +37,7 @@ namespace Programmering_Eksamen.Controllers
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
 
-        /////////////////////////////////////////////////////////////////SIGNUP///////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////SIGNUP-Benjamin////////////////////////////////////////////////////////////////////
 
         [HttpGet] // Kode til bare at gå ind på siden
         public IActionResult Signup()
@@ -76,7 +76,7 @@ namespace Programmering_Eksamen.Controllers
             return RedirectToAction("Login"); // Sender bruger videre til login.cshtml
         }
 
-        /////////////////////////////////////////////////////////////LOGIN///////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////LOGIN-Benjamin/////////////////////////////////////////////////////////////////////////
 
         [HttpGet] // metoden til bare at gå ind på hjemmesiden
         public IActionResult Login()
@@ -92,8 +92,9 @@ namespace Programmering_Eksamen.Controllers
 
             if (user != null && user.password == password) //hvis brugernavn findes og password er korrekt
             {
-                ViewData["username"] = user; //sender username og password videre
-                ViewData["password"] = password; //sender username og password videre
+                TempData["username"] = user.Name; //sender username og password videre
+                TempData["password"] = user.password; //sender username og password videre
+                //skal bruge tempdata for at dataen faktisk sendes videre, når det ikke bare er return View() men RedirectToAction
                 return RedirectToAction("Index", "Home"); // Sender brugeren til indexsiden efter succesfuld login
             }
             else if(user != null) //hvis bruger findes men password ikke er korrekt
