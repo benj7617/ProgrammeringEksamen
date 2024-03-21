@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Programmering_Eksamen.styles.css" asp-append-version="true" />
+    <!--<link rel="stylesheet" href="~/Programmering_Eksamen.styles.css" asp-append-version="true" />-->
 </head>
 <body>
     <header>
@@ -32,12 +32,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ProductList">Whats in stock?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SignUp">Sign Up</a>
-                        </li>
+                        @if (TempData["username"] == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SignUp">Sign Up</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Log out</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

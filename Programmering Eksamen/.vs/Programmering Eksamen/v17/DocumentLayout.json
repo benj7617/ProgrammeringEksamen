@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|c:\\users\\benja\\documents\\github\\programmeringeksamen\\programmering eksamen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|c:\\users\\benja\\documents\\github\\programmeringeksamen\\programmering eksamen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|c:\\users\\benja\\documents\\github\\programmeringeksamen\\programmering eksamen\\views\\home\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|c:\\users\\benja\\documents\\github\\programmeringeksamen\\programmering eksamen\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -15,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|c:\\users\\benja\\documents\\github\\programmeringeksamen\\programmering eksamen\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|c:\\users\\benja\\documents\\github\\programmeringeksamen\\programmering eksamen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAwwFcAAAAxAAAA",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAuwIkAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T12:39:36.902Z",
               "IsPinned": true,
@@ -44,41 +48,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\SignUp.cshtml",
-              "ToolTip": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\SignUp.cshtml",
-              "RelativeToolTip": "Views\\Home\\SignUp.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T12:46:54.297Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBYAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-20T08:19:25.158Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Logout.cshtml",
+              "RelativeToolTip": "Views\\Home\\Logout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T12:28:19.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T12:13:44.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
               "ToolTip": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Login.cshtml",
               "RelativeToolTip": "Views\\Home\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-13T10:01:07.862Z",
               "EditorCaption": ""
