@@ -1,5 +1,38 @@
 ﻿@model List<Product>
 
+<head>
+	<style>
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: auto;
+			text-align: center;
+			font-family: arial;
+		}
+
+		.price {
+			color: grey;
+			font-size: 22px;
+		}
+
+		.card button {
+			border: none;
+			outline: 0;
+			padding: 12px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+		}
+
+			.card button:hover {
+				opacity: 0.7;
+			}
+	</style>
+</head>
+
 <h1>Alkohol vi har på lager lige for tiden. Der er @Model.Count på lager</h1>
 @*Når modellen skal tilgås skal model skrives med stort, af en eller anden grund*@
 
@@ -7,6 +40,13 @@
 	@foreach(Product item in Model)
 	{
 		<li>
+			<div class="card">
+				<img src="https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Tailored Jeans</h1>
+				<p class="price">@item.Cost</p>
+				<p>Some text about the jeans..</p>
+				<p><button>Add to Cart</button></p>
+			</div>
 			<p>@item.DBID @item.Cost</p>
 		</li>
 	}

@@ -3,6 +3,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+<script src="~/js/fetchAPI.js"></script>
+
 <script defer>
     console.log("jeg er et script og jeg kører");
     console.log("Username er: " + '@TempData["username"]');
@@ -17,6 +19,7 @@
     {
         @: console.log("error:normal - username er null. Er du logget ind?");
     }
+        
 </script>
 
 <div class="text-center">

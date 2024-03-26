@@ -36,6 +36,25 @@ namespace Programmering_Eksamen.Controllers
             List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
+       
+        public IActionResult Index2(Product Drink)
+        {
+
+            _context.Database.EnsureCreated();
+            
+            if (Drink != null)
+            {
+                _context.Products.AddRange(Drink);
+            }
+            
+           
+            
+
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
 
         /////////////////////////////////////////////////////////////////SIGNUP-Benjamin////////////////////////////////////////////////////////////////////
 

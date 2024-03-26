@@ -4047,19 +4047,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benja\\.nuget\\packages\\": {}
+    "C:\\Users\\cwalk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
+      "projectUniqueName": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
       "projectName": "Programmering Eksamen",
-      "projectPath": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
-      "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\obj\\",
+      "projectPath": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
+      "packagesPath": "C:\\Users\\cwalk\\.nuget\\packages\\",
+      "outputPath": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\benja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cwalk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
