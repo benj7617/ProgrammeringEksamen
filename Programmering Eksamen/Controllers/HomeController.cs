@@ -37,18 +37,37 @@ namespace Programmering_Eksamen.Controllers
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
        
-        public IActionResult Index2(Product Drink)
+        public IActionResult Index2(string id, string name, string imgURL, string description)
         {
 
             _context.Database.EnsureCreated();
-            
-            if (Drink != null)
+
+            string[] allID = id.Split(",");
+			string[] allName = name.Split(",");
+			string[] allImgURL = imgURL.Split(",");
+			string[] allDescription = description.Split(",");
+			
+
+
+			List<Product> products = new List<Product>();
+            for (int i = 0; i < allID.Length; i++)
             {
-                _context.Products.AddRange(Drink);
+                Product temp = new Product();
+                temp.DBID = int.Parse(allID[i]);
+                temp.Name = allName[i];
+                temp.imgURL = allImgURL[i];
+                temp.Description = allDescription[i];
+                products.Add(temp);
+
             }
-            
-           
-            
+
+            if (!_context.Products.Any())
+            {
+                if (products.Count > 0)
+                {
+                    _context.Products.AddRange(products);
+                }
+            }
 
             _context.SaveChanges();
             return RedirectToAction("Index");

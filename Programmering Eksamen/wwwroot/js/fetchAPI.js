@@ -13,22 +13,31 @@ if (isAlredyFetched == null) {
            
             console.log("data");
             console.log(data);
-            relevantInfo = {
-                DBID: data.drinks[0].idDrink,
-                Cost: 0.0,
-                Name: data.drinks[0].strDrink,
-                Amount: 0
-            }
+            DBIDArr = [];
+            NameArr = [];
+            ImgURLArr = [];
+            DescriptionArr = [];
+            AmountArr = [];
+            CostArr = [];
             
-            localStorage.setItem("dataStore", JSON.stringify(relevantInfo));
+            for (var i = 0; i < data.drinks.Length(); i++) {
+                DBIDArr.push(data.drinks[i].idDrink);
+                NameArr.push(data.drinks[i].StrDrink);
+                ImgURLArr.push(data.drinks[i].strDrinkThumb);
+                DescriptionArr.push(data.drinks[i].strInstructions);
+                AmountArr.push(0);
+                CostArr.push(0);
+            }
+
+
             sessionStorage.setItem("fetched", "true")
             console.log(relevantInfo.DBID);
             console.log(relevantInfo.Cost);
+            window.location.href = "Home/Index2?DBID=" + DBIDArr + "&Name=" + NameArr + "&ImgURL=" + ImgURLArr + "&Description=" + DescriptionArr + "&Cost=" + CostArr + "&Amount=" + AmountArr;
             
 
         })
         .catch(err => console.error(err));
     
-    const modelData = JSON.parse(localStorage.getItem("dataStore"));
-    window.location.href = "Home/Index2?DBID=" + modelData.DBID + "&Cost=" + modelData.Cost + "&Amount=" + modelData.Amount;
+  
 }
