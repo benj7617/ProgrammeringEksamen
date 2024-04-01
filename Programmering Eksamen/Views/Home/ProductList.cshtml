@@ -39,15 +39,14 @@
 <ul>
 	@foreach(Product item in Model)
 	{
-		<li>
+		
 			<div class="card">
-				<img src="https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg" alt="Denim Jeans" style="width:100%">
-				<h1>Tailored Jeans</h1>
+				<img src="@item.imgURL" style="width:100%">
+				<h1>@item.Name</h1>
 				<p class="price">@item.Cost</p>
-				<p>Some text about the jeans..</p>
+				<p>@item.Description</p>
 				<p><button>Add to Cart</button></p>
 			</div>
-			<p>@item.DBID @item.Cost</p>
-		</li>
+		
 	}
 </ul>

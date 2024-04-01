@@ -3,7 +3,6 @@
 
 // Write your JavaScript code.
 
-
 (function Initialize() {
-    sessionStorage.clear();
+    sessionStorage.clear()
 })();

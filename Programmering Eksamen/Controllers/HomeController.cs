@@ -37,15 +37,15 @@ namespace Programmering_Eksamen.Controllers
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
        
-        public IActionResult Index2(string id, string name, string imgURL, string description)
+        public IActionResult Index2(string DBID, string Name, string ImgURL, string Description)
         {
 
             _context.Database.EnsureCreated();
 
-            string[] allID = id.Split(",");
-			string[] allName = name.Split(",");
-			string[] allImgURL = imgURL.Split(",");
-			string[] allDescription = description.Split(",");
+            string[] allID = DBID.Split(",");
+			string[] allName = Name.Split(",");
+			string[] allImgURL = ImgURL.Split(",");
+			string[] allDescription = Description.Split(",");
 			
 
 
