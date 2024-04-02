@@ -50,7 +50,7 @@ namespace Programmering_Eksamen.Controllers
 
 
 			List<Product> products = new List<Product>();
-            for (int i = 0; i < allID.Length; i++)
+            for (int i = 0; i < allID.Count(); i++)
             {
                 Product temp = new Product();
                 temp.DBID = int.Parse(allID[i]);
@@ -61,11 +61,17 @@ namespace Programmering_Eksamen.Controllers
 
             }
 
+            
+
             if (!_context.Products.Any())
             {
-                if (products.Count > 0)
+                if (products != null)
                 {
                     _context.Products.AddRange(products);
+                }
+                else
+                {
+                    _context.Products.RemoveRange(_context.Products);
                 }
             }
 

@@ -21,15 +21,21 @@ if (isAlredyFetched == null) {
             
             for (var i = 0; i < data.drinks.length; i++) {
                 DBIDArr.push(data.drinks[i].idDrink);
-                NameArr.push(data.drinks[i].StrDrink);
+                NameArr.push(data.drinks[i].strDrink);
                 ImgURLArr.push(data.drinks[i].strDrinkThumb);
                 DescriptionArr.push(data.drinks[i].strInstructions);
 
             }
-            print(NameArr);
+            console.log(NameArr);
+            console.log(NameArr.length)
+
+            let filtreretNameArr = NameArr.map(str => str.replace(/&/g, 'JENSEN'))
+            let filtreretImgURLArr = ImgURLArr.map(str => str.replace(/&/g, 'JENSEN'))
+            let filtreretDescriptionArr = DescriptionArr.map(str => str.replace(/&/g, 'JENSEN'))
+
 
             sessionStorage.setItem("fetched", "true");
-            window.location.href = "Home/Index2?DBID=" + DBIDArr + "&Name=" + NameArr + "&ImgURL=" + ImgURLArr + "&Description=" + DescriptionArr;  
+            window.location.href = "Home/Index2?DBID=" + DBIDArr + "&Name=" + filtreretNameArr + "&ImgURL=" + filtreretImgURLArr + "&Description=" + filtreretDescriptionArr;  
 
         })
         .catch(err => console.error(err));
