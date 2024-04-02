@@ -158,6 +158,8 @@ namespace Programmering_Eksamen.Controllers
             }
         }
 
+        ///////////////////////////////////////
+
         [HttpGet] //standard, som alle bruger per default. skal skrives her grundet vi har 2 forkellige
         public IActionResult AddProduct()
         {
@@ -171,8 +173,31 @@ namespace Programmering_Eksamen.Controllers
             return View(); //kunne ændres til en redirect så det bliver tydeligere for brugeren at der er sket noget
         }
 
+		[HttpGet]
+		public IActionResult ModifyProduct()
+		{
+			return View();
+		}
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		[HttpPost] //Benjamin
+        public IActionResult ModifyProduct(int id, Product newProd)
+        {
+            var oldProd = _context.Products.FirstOrDefault(p => p.Id == id);
+            if (oldProd != null) //sørger for at produktet faktisk findes
+            {
+                ViewData["ModifyResponse"] = "Properties modified: ";
+                if (newProd.Cost != null) { oldProd.Cost = newProd.Cost; ViewData["ModifyResponse"] = ViewData["ModifyResponse"] + "Cost "; }
+                if (newProd.Amount != null) { oldProd.Amount = newProd.Amount; ViewData["ModifyResponse"] = ViewData["ModifyResponse"] + "Amount "; }
+                _context.SaveChanges();
+                
+                return View();
+            }
+            else { ViewData["ModifyResponse"] = "Error: DBID Does Not Exist"; return View(); }
+        }
+
+
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
@@ -188,5 +213,10 @@ namespace Programmering_Eksamen.Controllers
             return View();
         }
 
-	}
+        public IActionResult Admin()
+        {
+            return View();
+        }
+
+    }
 }

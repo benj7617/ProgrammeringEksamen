@@ -1,18 +1,29 @@
-﻿<h1>Det her er en inputform til at skabe et nyt produkt i databasen. Den kræver en ID, der skal være iden i databasen, en pris, og en mængde</h1>
-<h2>Indtast venligst informationer</h2>
+﻿<h2>Tilføj produkt. ALLE felter skal indfyldes</h2>
 
 <form method="post">
 	<label> Database ID: </label>
-	<br />
 	<input type="text" name="DBID"/>
 	<br />
 	<label> Hvad skal den koste: </label>
-	<br />
 	<input type="text" name="Cost" />
 	<br />
 	<label> Hvor mange skal der være: </label>
-	<br />
 	<input type="text" name="amount" />
+	<br />
+	<label> Description: </label>
+	<input type="text" name="Description" />
+	<br />
+	<label> Name: </label>
+	<input type="text" name="Name" />
+	<br />
+	<label> ImageURL: </label>
+	<input type="text" name="imgURL" />
 	<br />
 	<input type="submit" value="SKAB DEN" />
 </form>
+
+<h1>@ViewData["ModifyResponse"]</h1>
+
+<p>Her er noget default data du kan bruge</p>
+<p>apple</p>
+<p>https://www.industryleadersmagazine.com/wp-content/uploads/2012/04/Apple.jpg</p>

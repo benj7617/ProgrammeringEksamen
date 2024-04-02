@@ -52,6 +52,12 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Log out</a>
                             </li>
                         }
+                        @if (Context.Request.Cookies["adminStatus"] != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AddProduct">Admin</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
