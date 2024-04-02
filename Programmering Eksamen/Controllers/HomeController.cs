@@ -61,7 +61,7 @@ namespace Programmering_Eksamen.Controllers
 
             }
 
-            
+            _context.Products.RemoveRange(_context.Products);
 
             if (!_context.Products.Any())
             {
@@ -71,7 +71,7 @@ namespace Programmering_Eksamen.Controllers
                 }
                 else
                 {
-                    _context.Products.RemoveRange(_context.Products);
+                    
                 }
             }
 
