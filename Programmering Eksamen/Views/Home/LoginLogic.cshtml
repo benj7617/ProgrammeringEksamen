@@ -1,0 +1,17 @@
+﻿<!--Benjamin-->
+<h1>Redirecting...</h1>
+<p>Hvis du ser det her så har du enten noget dårligt internet, eller også er der gået noget galt</p>
+<!--redirect side så cookies kan blive sat før index loades-->
+<script>
+@if (TempData["username"] != null)
+{
+    @: console.log("name recieved, saving cookies");
+    @: document.cookie = "username=@TempData["username"]; path=/";
+}
+else
+{
+    @: console.log("error:normal - username er null. Er du logget ind?");
+}
+
+    window.location.href = '@Url.Action("Index", "Home")';
+</script>

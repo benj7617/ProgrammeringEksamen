@@ -136,10 +136,11 @@ namespace Programmering_Eksamen.Controllers
 
             if (user != null && user.password == password) //hvis brugernavn findes og password er korrekt
             {
+
                 TempData["username"] = user.Name; //sender username og password videre
                 TempData["password"] = user.password; //sender username og password videre
                 //skal bruge tempdata for at dataen faktisk sendes videre, når det ikke bare er return View() men RedirectToAction
-                return RedirectToAction("Index", "Home"); // Sender brugeren til indexsiden efter succesfuld login
+                return RedirectToAction("LoginLogic", "Home"); // Sender brugeren til indexsiden efter succesfuld login
             }
             else if(user != null) //hvis bruger findes men password ikke er korrekt
             {
@@ -181,6 +182,11 @@ namespace Programmering_Eksamen.Controllers
 		{
 			return View();
 		}
+
+        public IActionResult LoginLogic()
+        {
+            return View();
+        }
 
 	}
 }

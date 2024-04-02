@@ -6,24 +6,12 @@
 <script src="~/js/fetchAPI.js"></script>
 
 <script defer>
-    console.log("jeg er et script og jeg kører");
     console.log("Username er: " + '@TempData["username"]');
-    // man er nødt til at checke om det er null i c#, da det giver syntax error hvis man gør det i JS 
-    @if (TempData["username"] != null)
-    {
-        @: console.log("name recieved, saving cookies");
-        @: document.cookie = "username=@TempData["username"]; path=/";
-        @: document.cookie = "password=@TempData["password"]; path=/";
-    }
-    else
-    {
-        @: console.log("error:normal - username er null. Er du logget ind?");
-    }
         
 </script>
 
 <div class="text-center">
-    <h1 class="display-4">Velkommen til Jensens Alkohol Butik @TempData["username"]</h1>
+    <h1 class="display-4">Velkommen til Jensens Alkohol Butik @Context.Request.Cookies["username"] </h1>
     <p>Den bedste alkohol butik på denne side af Furesøen</p>
 
 </div>
