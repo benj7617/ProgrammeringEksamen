@@ -1,50 +1,50 @@
-﻿let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f="
+﻿let url = "https://thecocktaildb.com/api/json/v1/1/lookup.php?iid="
 
-let alphabet = [];
-for (let i = 97; i <= 122; i++) {
-    alphabet.push(String.fromCharCode(i));
-}
+let ingredientLimit = 10;
 
-console.log(url + alphabet[1]);
+let DBID;
+let Name;
+let ImgURL;
+let Description;
 
 
 let isAlredyFetched = sessionStorage.getItem("fetched");
 
 console.log(isAlredyFetched);
 
+for (var i = 1; i < ingredientLimit; i++) {
+    newURL = url + i;
     if (isAlredyFetched == null) {
         console.log("TEST");
         fetch(newURL)
             .then(respone => respone.json())
             .then(data => {
-
+                
                 console.log("data");
                 console.log(data);
-                DBIDArr = [];
-                NameArr = [];
-                ImgURLArr = [];
-                DescriptionArr = [];
+                
+                DBID = (data.ingredients[0].idIngredient);
+                Name = (data.ingredients[0].strIngredient);
+                ImgURL = "https://www.thecocktaildb.com/images/ingredients/" + Name + ".png"
+                Description = (data.ingredients[0].strDescription);
+
+                FirstLineDescription = Description.split(".")[0];
+
+                console.log("");
 
 
-                for (var i = 0; i < data.drinks.length; i++) {
-                    DBIDArr.push(data.drinks[i].idDrink);
-                    NameArr.push(data.drinks[i].strDrink);
-                    ImgURLArr.push(data.drinks[i].strDrinkThumb);
-                    DescriptionArr.push(data.drinks[i].strInstructions);
-
-                }
-                console.log(NameArr);
-                console.log(NameArr.length)
-
-                let filtreretNameArr = NameArr.map(str => str.replace(/&/g, 'JENSEN'))
-                let filtreretImgURLArr = ImgURLArr.map(str => str.replace(/&/g, 'JENSEN'))
-                let filtreretDescriptionArr = DescriptionArr.map(str => str.replace(/&/g, 'JENSEN'))
+                console.log(Name + ImgURL + Description);
+               
+               
 
 
                 sessionStorage.setItem("fetched", "true");
-                window.location.href = "Home/Index2?DBID=" + DBIDArr + "&Name=" + filtreretNameArr + "&ImgURL=" + filtreretImgURLArr + "&Description=" + filtreretDescriptionArr;
+                window.location.href = "Home/Index2?DBID=" + DBID + "&Name=" + Name + "&ImgURL=" + ImgURL + "&Description=" + FirstLineDescription;
 
             })
             .catch(err => console.error(err));
 
     }
+}
+
+   

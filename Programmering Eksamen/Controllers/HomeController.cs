@@ -41,37 +41,32 @@ namespace Programmering_Eksamen.Controllers
         {
 
             _context.Database.EnsureCreated();
-
+            /*
             string[] allID = DBID.Split(",");
 			string[] allName = Name.Split(",");
 			string[] allImgURL = ImgURL.Split(",");
 			string[] allDescription = Description.Split(",");
 			
+            for (int i = 0; i < allID.Length; i++)
+            {
+               
 
+            }*/
 
 			List<Product> products = new List<Product>();
-            for (int i = 0; i < allID.Count(); i++)
-            {
-                Product temp = new Product();
-                temp.DBID = int.Parse(allID[i]);
-                temp.Name = allName[i];
-                temp.imgURL = allImgURL[i];
-                temp.Description = allDescription[i];
+             Product temp = new Product();
+                temp.DBID = int.Parse(DBID);
+                temp.Name = Name;
+                temp.imgURL = ImgURL;
+                temp.Description = Description;
                 products.Add(temp);
-
-            }
-
-            _context.Products.RemoveRange(_context.Products);
+            
 
             if (!_context.Products.Any())
             {
-                if (products != null)
+                if (products.Count > 0)
                 {
                     _context.Products.AddRange(products);
-                }
-                else
-                {
-                    
                 }
             }
 
@@ -136,11 +131,10 @@ namespace Programmering_Eksamen.Controllers
 
             if (user != null && user.password == password) //hvis brugernavn findes og password er korrekt
             {
-
                 TempData["username"] = user.Name; //sender username og password videre
                 TempData["password"] = user.password; //sender username og password videre
                 //skal bruge tempdata for at dataen faktisk sendes videre, når det ikke bare er return View() men RedirectToAction
-                return RedirectToAction("LoginLogic", "Home"); // Sender brugeren til indexsiden efter succesfuld login
+                return RedirectToAction("Index", "Home"); // Sender brugeren til indexsiden efter succesfuld login
             }
             else if(user != null) //hvis bruger findes men password ikke er korrekt
             {
@@ -158,8 +152,6 @@ namespace Programmering_Eksamen.Controllers
             }
         }
 
-        ///////////////////////////////////////
-
         [HttpGet] //standard, som alle bruger per default. skal skrives her grundet vi har 2 forkellige
         public IActionResult AddProduct()
         {
@@ -173,31 +165,8 @@ namespace Programmering_Eksamen.Controllers
             return View(); //kunne ændres til en redirect så det bliver tydeligere for brugeren at der er sket noget
         }
 
-		[HttpGet]
-		public IActionResult ModifyProduct()
-		{
-			return View();
-		}
 
-		[HttpPost] //Benjamin
-        public IActionResult ModifyProduct(int id, Product newProd)
-        {
-            var oldProd = _context.Products.FirstOrDefault(p => p.Id == id);
-            if (oldProd != null) //sørger for at produktet faktisk findes
-            {
-                ViewData["ModifyResponse"] = "Properties modified: ";
-                if (newProd.Cost != null) { oldProd.Cost = newProd.Cost; ViewData["ModifyResponse"] = ViewData["ModifyResponse"] + "Cost "; }
-                if (newProd.Amount != null) { oldProd.Amount = newProd.Amount; ViewData["ModifyResponse"] = ViewData["ModifyResponse"] + "Amount "; }
-                _context.SaveChanges();
-                
-                return View();
-            }
-            else { ViewData["ModifyResponse"] = "Error: DBID Does Not Exist"; return View(); }
-        }
-
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
@@ -208,15 +177,5 @@ namespace Programmering_Eksamen.Controllers
 			return View();
 		}
 
-        public IActionResult LoginLogic()
-        {
-            return View();
-        }
-
-        public IActionResult Admin()
-        {
-            return View();
-        }
-
-    }
+	}
 }
