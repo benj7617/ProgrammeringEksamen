@@ -36,43 +36,24 @@ namespace Programmering_Eksamen.Controllers
             List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
-       
-        public IActionResult Index2(string DBID, string Name, string ImgURL, string Description)
+        [HttpPost]
+        public IActionResult Index2([FromBody] List<Product> products)
         {
-
-            _context.Database.EnsureCreated();
-            /*
-            string[] allID = DBID.Split(",");
-			string[] allName = Name.Split(",");
-			string[] allImgURL = ImgURL.Split(",");
-			string[] allDescription = Description.Split(",");
-			
-            for (int i = 0; i < allID.Length; i++)
-            {
-               
-
-            }*/
-
-			List<Product> products = new List<Product>();
-             Product temp = new Product();
-                temp.DBID = int.Parse(DBID);
-                temp.Name = Name;
-                temp.imgURL = ImgURL;
-                temp.Description = Description;
-                products.Add(temp);
             
+            _context.Database.EnsureCreated();
+          
 
             if (!_context.Products.Any())
             {
-                if (products.Count > 0)
-                {
-                    _context.Products.AddRange(products);
-                }
+                _context.Products.AddRange(products);
             }
-
+            else
+            {
+                _context.Products.RemoveRange(_context.Products);
+            }
             _context.SaveChanges();
             return RedirectToAction("Index");
-
+           
         }
 
 
