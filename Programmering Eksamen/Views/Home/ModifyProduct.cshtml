@@ -1,17 +1,24 @@
 ﻿<!--Benjamin-->
-<h2>Tilføj produkt. ALLE felter skal indfyldes</h2>
+<h2>Modificer produkt, efterlade blank hvis ingen ændring</h2>
+
+<ul>
+	@foreach (var product in Model) // Iterate over each product in the model
+	{
+		<li>@product.Name - ID: @product.Id - Cost: @product.Cost - Amount: @product.Amount</li>
+	}
+</ul>
 
 <form method="post">
 	<label> Database ID: (den du vil opdatere) </label> 
 	<br />
-	<input type="text" name="DBID" />
+	<input type="text" name="id" />
 	<br />
 	<label> Ny pris: </label>
 	<br />
-	<input type="text" name="Cost" />
+	<input type="text" name="price" />
 	<br />
 	<label> Ny mængde: </label>
 	<br />
-	<input type="text" name="amount" />
+	<input type="text" name="quantity" />
 	<input type="submit" value="MODIFICER" />
 </form>

@@ -77,7 +77,7 @@ namespace Programmering_Eksamen.Controllers
 
 
 
-	/////////////////////////////////////////////////////////////////SIGNUP-Benjamin////////////////////////////////////////////////////////////////////
+	//SIGNUP-Benjamin
 
 	[HttpGet] // Kode til bare at gå ind på siden
         public IActionResult Signup()
@@ -182,10 +182,56 @@ namespace Programmering_Eksamen.Controllers
 		{
 			return View();
 		}
-		public IActionResult ModifyProduct()
+
+
+        //Benjamin
+        [HttpGet]
+        public IActionResult ModifyProduct()
 		{
-			return View();
+            List<Product> productsById = _context.Products.OrderBy(p => p.Id).ToList(); 
+            return View(productsById);
 		}
+
+        [HttpPost]
+        public IActionResult ModifyProduct(int id, double? price, int? quantity) //både amount og quantity er valgfri
+        {
+            var product = _context.Products.FirstOrDefault(p => p.Id == id);
+            Debug.WriteLine(product);
+            if (product == null) //checker om produktet findes
+            {
+                TempData["response"] = "Product Not Found";
+                Debug.WriteLine("none found");
+                return View();
+            }
+
+            if (price.HasValue)
+            {
+                product.Cost = price.Value;
+                TempData["response"] = "Price updated";
+                Debug.WriteLine(price.Value);
+            }
+
+            if (quantity.HasValue)
+            {
+                product.Amount = quantity.Value;
+                if (TempData["response"] != null)
+                {
+                    TempData["response"] = $"{TempData["response"]} Quantity updated";
+                }
+                else
+                {
+                    TempData["response"] = "Quantity updated";
+                }
+                Debug.WriteLine(quantity.Value);
+            }
+
+            Debug.WriteLine(product);
+            _context.SaveChanges();
+
+			List<Product> productsById = _context.Products.OrderBy(p => p.Id).ToList();
+			return View(productsById);
+		}
+
         public IActionResult LoginLogic()
         {
             return View();
