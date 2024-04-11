@@ -34,6 +34,59 @@
 </head>
 
 <script src="~/js/addToCart.js"></script>
+<input type="text" id="searchTerm" />
+<button id="searchBtn">Search</button>
+<div id="searchResults"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+	<script>
+		$(document).ready(function () {
+			$('#searchBtn').click(function () {
+				var searchTerm = $('#searchTerm').val();
+
+				$.ajax({
+					url: '/Home/Search',
+					type: 'POST',
+					data: { searchTerm: searchTerm },
+					success: function (response) {
+						displaySearchResults(response);
+					},
+					error: function (xhr, status, error) {
+						console.error(error);
+					}
+				});
+			});
+
+			function displaySearchResults(products) {
+				var $resultsContainer = $('#searchResults');
+				$resultsContainer.empty();
+
+				if (products.length > 0) {
+					$.each(products, function (index, product) {
+						var $card = $('<div class="card"></div>');
+						var $img = $('<img src="' + product.imgURL + '" style="width:100%">');
+						var $title = $('<h1>' + product.Name + '</h1>');
+						var $price = $('<p class="price">' + product.Cost + '</p>');
+						var $description = $('<p>' + product.Description + '</p>');
+						var $button = $('<button onclick="addToCart(' + product.DBID + ', \'' + product.Name + '\')">Add to Cart</button>');
+
+						$card.append($img);
+						$card.append($title);
+						$card.append($price);
+						$card.append($description);
+						$card.append($button);
+
+						$resultsContainer.append($card);
+					});
+				} else {
+					$resultsContainer.text('No products found.');
+				}
+			}
+		});
+</script>
 
 <h1>Alkohol vi har på lager lige for tiden. Der er @Model.Count på lager</h1>
 @*Når modellen skal tilgås skal model skrives med stort, af en eller anden grund*@

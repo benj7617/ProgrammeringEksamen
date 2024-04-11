@@ -68,10 +68,18 @@ namespace Programmering_Eksamen.Controllers
            
         }
 
+        [HttpPost]
+		public IActionResult Search(string searchTerm)
+		{
+			var products = _context.Products.Where(p => p.Name.Contains(searchTerm)).ToList();
+			return Json(products);
+		}
 
-        /////////////////////////////////////////////////////////////////SIGNUP-Benjamin////////////////////////////////////////////////////////////////////
 
-        [HttpGet] // Kode til bare at gå ind på siden
+
+	/////////////////////////////////////////////////////////////////SIGNUP-Benjamin////////////////////////////////////////////////////////////////////
+
+	[HttpGet] // Kode til bare at gå ind på siden
         public IActionResult Signup()
         {
             return View();

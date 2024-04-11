@@ -1,7 +1,5 @@
 ﻿let things = [];
 
-const ingredients = document.querySelector("[data-ingredients-template]")
-
 
 function addToCart(id, name) {   
     var liste = document.getElementById("purchaseList");

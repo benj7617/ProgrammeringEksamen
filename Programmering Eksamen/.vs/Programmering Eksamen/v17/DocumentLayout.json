@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\views\\home\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\wwwroot\\js\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:wwwroot\\js\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\views\\home\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\home\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\data\\entities\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAA0wC0AAAAoAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAuwEgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T12:39:36.902Z",
               "IsPinned": true,
@@ -64,13 +64,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "addToCart.js",
               "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\wwwroot\\js\\addToCart.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\addToCart.js",
               "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\wwwroot\\js\\addToCart.js",
               "RelativeToolTip": "wwwroot\\js\\addToCart.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-04-10T11:47:19.141Z",
               "IsPinned": true,
@@ -78,20 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ProductList.cshtml",
               "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\ProductList.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ProductList.cshtml",
               "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\ProductList.cshtml",
               "RelativeToolTip": "Views\\Home\\ProductList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAALAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAYwC4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-11T09:21:05.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
