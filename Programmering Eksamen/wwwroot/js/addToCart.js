@@ -1,6 +1,9 @@
 ﻿let things = [];
 
 
+
+
+
 function addToCart(id, name) {   
     var liste = document.getElementById("purchaseList");
 

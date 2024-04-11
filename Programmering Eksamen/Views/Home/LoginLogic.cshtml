@@ -7,11 +7,11 @@
 {
     @: console.log("name recieved, saving cookies");
     @: document.cookie = "username=@TempData["username"]; path=/";
+    @: document.cookie = "userID=@TempData["userID"]; path=/";
 }
 else
 {
     @: console.log("error:normal - username er null. Er du logget ind?");
 }
-
     window.location.href = '@Url.Action("Index", "Home")';
 </script>

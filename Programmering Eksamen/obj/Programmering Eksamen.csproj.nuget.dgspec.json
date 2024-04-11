@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj": {}
+    "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj": {}
   },
   "projects": {
-    "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj": {
+    "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
+        "projectUniqueName": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
         "projectName": "Programmering Eksamen",
-        "projectPath": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
-        "packagesPath": "C:\\Users\\cwalk\\.nuget\\packages\\",
-        "outputPath": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\obj\\",
+        "projectPath": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\Programmering Eksamen.csproj",
+        "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benja\\Documents\\GitHub\\ProgrammeringEksamen\\Programmering Eksamen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cwalk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\benja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
