@@ -38,13 +38,13 @@ if (isAlreadyFetched == null) {
 
     // Vent på, at alle fetch-anmodninger er færdige
     Promise.all(fetchPromises)
-        .then(ingredients => {
-            console.log("Alle fetch-anmodninger er færdige:", ingredients);
+        .then(ing => {
+            console.log("Alle fetch-anmodninger er færdige:", ing);
             $.ajax({
                 type: "POST",
                 url: "/Home/Index2",
                 contentType: "application/json",
-                data: JSON.stringify(ingredients),
+                data: JSON.stringify(ing),
                 success: function (response) {
                     // Behandl svaret fra controlleren, f.eks. vis en bekræftelsesbesked
                     console.log("Data blev sendt succesfuldt til serveren.");

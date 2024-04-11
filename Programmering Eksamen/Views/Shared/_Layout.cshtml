@@ -37,6 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ProductList">Whats in stock?</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Cart">View your Cart</a>
+                        </li>
                         @if (Context.Request.Cookies["username"] == null)
                         {
                             <li class="nav-item">

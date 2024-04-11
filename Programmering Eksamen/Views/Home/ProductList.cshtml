@@ -33,20 +33,42 @@
 	</style>
 </head>
 
+<script src="~/js/addToCart.js"></script>
+
 <h1>Alkohol vi har på lager lige for tiden. Der er @Model.Count på lager</h1>
 @*Når modellen skal tilgås skal model skrives med stort, af en eller anden grund*@
+<div>
+	<label for="search">Search Ingredients</label>
+	<input type="search" id="search"/>
+	<template data-ingredients-template>
+		<div class="card">
+			<img src="" style="width:100%">
+			<h1></h1>
+			<p class="price"></p>
+			<p></p>
+			<p><button onclick="addToCart()">Add to Cart</button></p>
+		</div>
+	</template>
+	
+</div>
 
-<ul>
-	@foreach(Product item in Model)
-	{
+<div>
+	<button onclick="confirmPurchace()">Tryk her for at købe følgende produkter</button>
+	<ul id="purchaseList">
+	</ul>
+</div>
+<div>
+	<ul>
+		@foreach(Product item in Model)
+		{
 		
-			<div class="card">
-				<img src="@item.imgURL" style="width:100%">
-				<h1>@item.Name</h1>
-				<p class="price">@item.Cost</p>
-				<p>@item.Description</p>
-				<p><button>Add to Cart</button></p>
-			</div>
-		
-	}
-</ul>
+				<div class="card">
+					<img src="@item.imgURL" style="width:100%">
+					<h1>@item.Name</h1>
+					<p class="price">@item.Cost</p>
+					<p>@item.Description</p>
+				<p><button onclick="addToCart(@item.DBID, '@item.Name')">Add to Cart</button></p>
+				</div>
+		}
+	</ul>
+</div>

@@ -31,9 +31,21 @@ namespace Programmering_Eksamen.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Cart([FromBody] int[] dataArray)
+        {
+            
+            Console.WriteLine(dataArray.ToString());
+
+            _context.Orders.AddRange();
+
+
+
+            return View();
+        }
         public IActionResult ProductList()
         {
-            List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
+			List<Product> productsByCost = _context.Products.OrderBy(p => p.Cost).ToList(); //henter elementerne i products sorteret efter pris
             return View(productsByCost); //sender denne data videre til "ProductList" viewet
         }
         [HttpPost]
@@ -49,8 +61,8 @@ namespace Programmering_Eksamen.Controllers
             }
             else
             {
-                _context.Products.RemoveRange(_context.Products);
-            }
+				return RedirectToAction("Index");
+			}
             _context.SaveChanges();
             return RedirectToAction("Index");
            
@@ -109,7 +121,7 @@ namespace Programmering_Eksamen.Controllers
         {
             // finder ud af om indtastet username matcher nogen i database
             var user = _context.Users.FirstOrDefault(u => u.Name == username);
-
+            
             if (user != null && user.password == password) //hvis brugernavn findes og password er korrekt
             {
                 TempData["username"] = user.Name; //sender username og password videre
