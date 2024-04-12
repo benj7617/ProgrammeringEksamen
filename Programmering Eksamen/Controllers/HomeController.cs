@@ -69,12 +69,8 @@ namespace Programmering_Eksamen.Controllers
 
 			_context.SaveChanges();
 
-			Console.WriteLine(dataArray.ToString());
 
-           
-
-
-            return View();
+            return View("Index");
         }
         public IActionResult ProductList()
         {
