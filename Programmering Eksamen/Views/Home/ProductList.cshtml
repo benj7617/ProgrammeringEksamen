@@ -33,60 +33,66 @@
 	</style>
 </head>
 
+
 <script src="~/js/addToCart.js"></script>
-<input type="text" id="searchTerm" />
-<button id="searchBtn">Search</button>
-<div id="searchResults"></div>
 
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+@*Dette skal ligge her inde fordi jeg skal bruge USERID til at oprette en korrekt database*@
 <script>
+	let listOfIngredients = [];
+	let userID;
+	let data;
 
-		$(document).ready(function () {
-			$('#searchBtn').click(function () {
-				var searchTerm = $('#searchTerm').val();
+	function addToCart(id, name) {
+		var liste = document.getElementById("purchaseList");
 
-				$.ajax({
-					url: '/Home/Search',
-					type: 'POST',
-					data: { searchTerm: searchTerm },
-					success: function (response) {
-						displaySearchResults(response);
-					},
-					error: function (xhr, status, error) {
-						console.error(error);
-					}
-				});
-			});
+		// Opret et nyt listeelement
+		var nytElement = document.createElement("li");
 
-			function displaySearchResults(products) {
-				console.log(products);
-				var $resultsContainer = $('#searchResults');
-				$resultsContainer.empty();
+		// Tilføj tekst til det nye element
+		var tekstNode = document.createTextNode(name);
+		nytElement.appendChild(tekstNode);
 
-				
-				var $card = $('<div class="card"></div>');
-				var $img = $('<img src="' + products[0].imgURL + '" style="width:100%">');
-				console.log(products[0].name);
-				var $title = $('<h1>' + products[0].name + '</h1>');
-				var $price = $('<p class="price">' + products[0].cost + '</p>');
-				var $description = $('<p>' + products[0].description + '</p>');
-				var $button = $('<button onclick="addToCart(' + products[0].dbid + ', \'' + products[0].name + '\')">Add to Cart</button>');
+		// Tilføj det nye element til den eksisterende liste
+		liste.appendChild(nytElement);
+		listOfIngredients.push(id);
+		console.log(listOfIngredients);
+		
+	}
+	console.log(@Context.Request.Cookies["userID"]);
+	userID = @Context.Request.Cookies["userID"];
+	function confirmPurchace() {
 
-				$card.append($img);
-				$card.append($title);
-				$card.append($price);
-				$card.append($description);
-				$card.append($button);
+		listOfIngredients.unshift(parseInt(userID))
 
-				$resultsContainer.append($card);
+		
+
+		console.log("dette er data + ", listOfIngredients);
+
+		$.ajax({
+			type: "POST",
+			url: "/Home/Purchase",
+			contentType: "application/json",
+			data: JSON.stringify(listOfIngredients),
+			success: function (response) {
+				// Behandl svaret fra controlleren
+				console.log("Data blev sendt succesfuldt til serveren.", listOfIngredients);
+			},
+			error: function (xhr, status, error) {
+				// Håndter fejl, hvis noget går galt, men det gør det ikke truuust
+				console.error("Fejl ved afsendelse af data til serveren:", error);
 			}
 		});
+	}
 </script>
+
+
 
 <h1>Alkohol vi har på lager lige for tiden. Der er @Model.Count på lager</h1>
 @*Når modellen skal tilgås skal model skrives med stort, af en eller anden grund*@
+
+<input type="text" id="searchTerm" />
+<button id="searchBtn" onclick="search()">Search</button>
+<div id="searchResults"></div>
 
 <div>
 	<button onclick="confirmPurchace()">Tryk her for at købe følgende produkter</button>

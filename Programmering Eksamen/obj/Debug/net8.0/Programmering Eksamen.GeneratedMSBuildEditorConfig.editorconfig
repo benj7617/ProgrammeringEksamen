@@ -9,79 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Programmering_Eksamen
 build_property.RootNamespace = Programmering_Eksamen
-build_property.ProjectDir = C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen\
+build_property.ProjectDir = E:\lBOZO\ProgrammeringEksamen\Programmering Eksamen\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\benja\Documents\GitHub\ProgrammeringEksamen\Programmering Eksamen
+build_property.MSBuildProjectDirectory = E:\lBOZO\ProgrammeringEksamen\Programmering Eksamen
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/About.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/AddProduct.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Admin.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Cart.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Index.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Login.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/LoginLogic.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/LoginLogic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkxvZ2ljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Logout.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/ModifyProduct.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/ModifyProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb2RpZnlQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Privacy.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/ProductList.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Home/SignUp.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Home/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Shared/Error.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/_ViewImports.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/_ViewStart.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benja/Documents/GitHub/ProgrammeringEksamen/Programmering Eksamen/Views/Shared/_Layout.cshtml]
+[E:/lBOZO/ProgrammeringEksamen/Programmering Eksamen/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-951keqqry2

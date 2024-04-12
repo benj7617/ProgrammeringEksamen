@@ -32,14 +32,47 @@ namespace Programmering_Eksamen.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Cart([FromBody] int[] dataArray)
+        public IActionResult Purchase([FromBody] int[] dataArray)
         {
             
-            Console.WriteLine(dataArray.ToString());
+            int userId = dataArray[0];
 
-            _context.Orders.AddRange();
+            List<Order> orders = new List<Order>();
+			List<OrderProducts> orderProducts = new List<OrderProducts>();
+            string TimeAndDate = DateTime.Now.ToString();
+			for (int i = 1; i <= dataArray.Count()-1; i++){
+                
+                Order temp = new Order();
+                temp.CreatedDate = TimeAndDate;
+                temp.UserID = userId;
+				orders.Add(temp);
 
-            //@Context.Request.Cookies["userID"]
+                
+			}
+			_context.Orders.AddRange(orders);
+			_context.SaveChanges();
+
+			List<int> orderIds = _context.Orders
+							.Where(o => o.CreatedDate == TimeAndDate)
+							.Select(o => o.Id)
+							.ToList();
+
+			for (int i = 1; i <= orderIds.Count(); i++)
+			{
+				OrderProducts temp = new OrderProducts();
+                temp.Product = dataArray[i];
+				temp.Order = orderIds[i-1];
+
+		
+				orderProducts.Add(temp);
+			}
+
+			_context.SaveChanges();
+
+			Console.WriteLine(dataArray.ToString());
+
+           
+
 
             return View();
         }

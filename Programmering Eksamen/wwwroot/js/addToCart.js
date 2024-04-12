@@ -1,44 +1,44 @@
-﻿let things = [];
+﻿
 
-
-
-
-
-function addToCart(id, name) {   
-    var liste = document.getElementById("purchaseList");
-
-    // Opret et nyt listeelement
-    var nytElement = document.createElement("li");
-
-    // Tilføj tekst til det nye element
-    var tekstNode = document.createTextNode(name);
-    nytElement.appendChild(tekstNode);
-
-    // Tilføj det nye element til den eksisterende liste
-    liste.appendChild(nytElement);
-    things.push(id)
-    console.log(things)
-}
-
-function confirmPurchace() {
-
-    console.log(things);
-
+function search() {
+    var searchTerm = document.getElementById("searchTerm").value
     $.ajax({
-        type: "POST",
-        url: "/Home/Cart",
-        contentType: "application/json",
-        data: JSON.stringify(things),
+        url: '/Home/Search',
+        type: 'POST',
+        data: { searchTerm: searchTerm },
         success: function (response) {
-            // Behandl svaret fra controlleren, f.eks. vis en bekræftelsesbesked
-            console.log("Data blev sendt succesfuldt til serveren.", things);
+            displaySearchResults(response);
         },
         error: function (xhr, status, error) {
-            // Håndter fejl, hvis noget går galt
-            console.error("Fejl ved afsendelse af data til serveren:", error);
+            console.error(error);
         }
     });
 
-
-
 }
+
+
+function displaySearchResults(products) {
+    console.log(products);
+    var $resultsContainer = $('#searchResults');
+    $resultsContainer.empty();
+
+
+    var $card = $('<div class="card"></div>');
+    var $img = $('<img src="' + products[0].imgURL + '" style="width:100%">');
+    console.log(products[0].name);
+    var $title = $('<h1>' + products[0].name + '</h1>');
+    var $price = $('<p class="price">' + products[0].cost + '</p>');
+    var $description = $('<p>' + products[0].description + '</p>');
+    var $button = $('<button onclick="addToCart(' + products[0].dbid + ', \'' + products[0].name + '\')">Add to Cart</button>');
+
+    $card.append($img);
+    $card.append($title);
+    $card.append($price);
+    $card.append($description);
+    $card.append($button);
+
+    $resultsContainer.append($card);
+}
+
+
+

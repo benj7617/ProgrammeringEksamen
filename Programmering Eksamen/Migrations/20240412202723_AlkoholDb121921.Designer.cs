@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Programmering_Eksamen.Data;
 
@@ -10,9 +11,11 @@ using Programmering_Eksamen.Data;
 namespace Programmering_Eksamen.Migrations
 {
     [DbContext(typeof(connectionDBContext))]
-    partial class connectionDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240412202723_AlkoholDb121921")]
+    partial class AlkoholDb121921
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
