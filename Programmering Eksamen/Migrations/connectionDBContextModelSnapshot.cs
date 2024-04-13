@@ -38,9 +38,26 @@ namespace Programmering_Eksamen.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserID");
-
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Programmering_Eksamen.Data.Entities.OrderProducts", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Product")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OrderProducts");
                 });
 
             modelBuilder.Entity("Programmering_Eksamen.Data.Entities.Product", b =>
@@ -100,20 +117,6 @@ namespace Programmering_Eksamen.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("Programmering_Eksamen.Data.Entities.Order", b =>
-                {
-                    b.HasOne("Programmering_Eksamen.Data.Entities.User", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Programmering_Eksamen.Data.Entities.User", b =>
-                {
-                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

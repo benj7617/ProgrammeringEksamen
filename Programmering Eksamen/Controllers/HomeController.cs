@@ -67,6 +67,8 @@ namespace Programmering_Eksamen.Controllers
 				orderProducts.Add(temp);
 			}
 
+            _context.OrderProducts.AddRange(orderProducts);
+
 			_context.SaveChanges();
 
 

@@ -13,6 +13,7 @@ namespace Programmering_Eksamen.Data
             _config = config;
         }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderProducts> OrderProducts { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; } //ik sikker på om den her bør være her, prøver bare noget
 
