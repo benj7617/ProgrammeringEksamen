@@ -37,10 +37,15 @@ namespace Programmering_Eksamen.Controllers
             
             int userId = dataArray[0];
 
-            List<Order> orders = new List<Order>();
+
+
+			dataArray = dataArray.Where((source, index) => index != 0).ToArray();
+
+
+			List<Order> orders = new List<Order>();
 			List<OrderProducts> orderProducts = new List<OrderProducts>();
             string TimeAndDate = DateTime.Now.ToString();
-			for (int i = 1; i <= dataArray.Count()-1; i++){
+			for (int i = 0; i < dataArray.Count(); i++){
                 
                 Order temp = new Order();
                 temp.CreatedDate = TimeAndDate;
@@ -53,15 +58,15 @@ namespace Programmering_Eksamen.Controllers
 			_context.SaveChanges();
 
 			List<int> orderIds = _context.Orders
-							.Where(o => o.CreatedDate == TimeAndDate)
+							.Where(o => o.CreatedDate == TimeAndDate && o.UserID == userId)
 							.Select(o => o.Id)
 							.ToList();
 
-			for (int i = 1; i <= orderIds.Count(); i++)
+			for (int i = 0; i < orderIds.Count(); i++)
 			{
 				OrderProducts temp = new OrderProducts();
                 temp.Product = dataArray[i];
-				temp.Order = orderIds[i-1];
+				temp.Order = orderIds[i];
 
 		
 				orderProducts.Add(temp);
