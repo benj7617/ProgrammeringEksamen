@@ -25,7 +25,6 @@ function displaySearchResults(products) {
 
     var $card = $('<div class="card"></div>');
     var $img = $('<img src="' + products[0].imgURL + '" style="width:100%">');
-    console.log(products[0].name);
     var $title = $('<h1>' + products[0].name + '</h1>');
     var $price = $('<p class="price">' + products[0].cost + '</p>');
     var $description = $('<p>' + products[0].description + '</p>');

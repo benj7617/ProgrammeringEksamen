@@ -37,8 +37,6 @@ namespace Programmering_Eksamen.Controllers
             
             int userId = dataArray[0];
 
-
-
 			dataArray = dataArray.Where((source, index) => index != 0).ToArray();
 
 
@@ -77,7 +75,7 @@ namespace Programmering_Eksamen.Controllers
 			_context.SaveChanges();
 
 
-            return View("Index");
+            return View();
         }
         public IActionResult ProductList()
         {

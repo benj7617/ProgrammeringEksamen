@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\wwwroot\\js\\fetchapi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:wwwroot\\js\\fetchapi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\data\\entities\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:data\\entities\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\data\\connectiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:data\\connectiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\data\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:data\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|e:\\lbozo\\programmeringeksamen\\programmering eksamen\\myclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{5E7F1C29-72BB-44D0-8770-08A42119BD40}|Programmering Eksamen.csproj|solutionrelative:myclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAqwCkAAAAjAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAtwF0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T12:39:36.902Z",
               "IsPinned": true,
@@ -48,54 +44,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-13T19:02:58.307Z",
+              "DocumentIndex": 0,
+              "Title": "fetchAPI.js",
+              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\wwwroot\\js\\fetchAPI.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\fetchAPI.js",
+              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\wwwroot\\js\\fetchAPI.js",
+              "RelativeToolTip": "wwwroot\\js\\fetchAPI.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-14T18:34:04.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T19:02:53.816Z",
+              "DocumentIndex": 3,
+              "Title": "MyClassDiagram.cd",
+              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\MyClassDiagram.cd",
+              "RelativeDocumentMoniker": "MyClassDiagram.cd",
+              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\MyClassDiagram.cd",
+              "RelativeToolTip": "MyClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-04-14T18:31:40.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Order.cs",
-              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Data\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\Order.cs",
-              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Data\\Entities\\Order.cs",
-              "RelativeToolTip": "Data\\Entities\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Title": "connectionDBContext.cs",
+              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Data\\connectionDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\connectionDBContext.cs",
+              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Data\\connectionDBContext.cs",
+              "RelativeToolTip": "Data\\connectionDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:58:28.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderProducts.cs",
-              "DocumentMoniker": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Data\\Entities\\OrderProducts.cs",
-              "RelativeDocumentMoniker": "Data\\Entities\\OrderProducts.cs",
-              "ToolTip": "E:\\lBOZO\\ProgrammeringEksamen\\Programmering Eksamen\\Data\\Entities\\OrderProducts.cs",
-              "RelativeToolTip": "Data\\Entities\\OrderProducts.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:56:41.84Z",
+              "WhenOpened": "2024-04-14T17:36:32.043Z",
               "EditorCaption": ""
             }
           ]

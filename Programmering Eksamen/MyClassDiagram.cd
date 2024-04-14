@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Programmering_Eksamen.Data.Entities.OrderProducts">
+    <Position X="6.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Entities\OrderProducts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programmering_Eksamen.Data.Entities.Product">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAgAAAAAAAAABSAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programmering_Eksamen.Data.Entities.User">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Data\Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programmering_Eksamen.Controllers.HomeController">
+    <Position X="1" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABQEAAAAAQQIAIAEACQAAIAEQAAAgAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programmering_Eksamen.Data.connectionDBContext">
+    <Position X="4" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEIACABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Data\connectionDBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programmering_Eksamen.Data.Entities.Order">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAgAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Data\Entities\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
