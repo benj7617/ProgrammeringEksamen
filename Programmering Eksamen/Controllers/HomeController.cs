@@ -143,6 +143,10 @@ namespace Programmering_Eksamen.Controllers
             _context.Users.Add(user);
             _context.SaveChanges();
 
+            //skaber en besked så bruger kan se deres konto blev lavet succesfuldt
+            string kontosucces = "Din konto er blevet lavet. Log in nu";
+            ViewData["errormsg"] = kontosucces;
+
             return RedirectToAction("Login"); // Sender bruger videre til login.cshtml
         }
 
