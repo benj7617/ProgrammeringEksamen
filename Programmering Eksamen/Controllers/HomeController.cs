@@ -43,30 +43,29 @@ namespace Programmering_Eksamen.Controllers
 			List<Order> orders = new List<Order>();
 			List<OrderProducts> orderProducts = new List<OrderProducts>();
             string TimeAndDate = DateTime.Now.ToString();
-			for (int i = 0; i < dataArray.Count(); i++){
-                
-                Order temp = new Order();
-                temp.CreatedDate = TimeAndDate;
-                temp.UserID = userId;
-				orders.Add(temp);
-
-                
-			}
+			
+      
+            Order tempOrder = new Order();
+            tempOrder.CreatedDate = TimeAndDate;
+            tempOrder.UserID = userId;
+			orders.Add(tempOrder);
+			
 			_context.Orders.AddRange(orders);
 			_context.SaveChanges();
 
-			List<int> orderIds = _context.Orders
+			int[] orderIds = _context.Orders
 							.Where(o => o.CreatedDate == TimeAndDate && o.UserID == userId)
 							.Select(o => o.Id)
-							.ToList();
+                            .ToArray();
+							
 
-			for (int i = 0; i < orderIds.Count(); i++)
+			for (int i = 0; i < dataArray.Count(); i++)
 			{
 				OrderProducts temp = new OrderProducts();
                 temp.Product = dataArray[i];
-				temp.Order = orderIds[i];
+				temp.Order = orderIds[0];
 
-		
+
 				orderProducts.Add(temp);
 			}
 
@@ -74,8 +73,7 @@ namespace Programmering_Eksamen.Controllers
 
 			_context.SaveChanges();
 
-
-            return View();
+            return RedirectToAction("Index");
         }
         public IActionResult ProductList()
         {
